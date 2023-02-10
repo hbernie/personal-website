@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return(
-    <><nav className="flex items-center justify-between flex-wrap bg-indigo-300 p-4">
+    <><nav className="flex items-center justify-between flex-wrap bg-indigo-400 p-4">
       <div className="flex items-center flex-shrink-0 text-indigo-900 mr-9">
           <span className="font-semibold text-xl tracking-tight">MyLogo</span>
       </div>
