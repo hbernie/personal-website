@@ -1,21 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-// import './App.css'
+import './App.css'
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
-function App() {
+export default function App() {
 
   return (
-    <><Navbar />
-    <div className="">
-      <h1 id='logo'>Hi, I'm Hannah.</h1>
-      <div className="card">
-        <p>
-          I am a cat mom first, and a fullstack software engineer second. 
-        </p>
-      </div>
-    </div></>
+    <div className='h-screen'>
+      <Navbar />
+      <Home />
+    </div>
   )
 }
-
-export default App
