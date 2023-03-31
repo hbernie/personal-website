@@ -5,11 +5,14 @@ import resume from '../assets/Resume.pdf';
 export default function NavBar() {
   return(
     <nav className="flex justify-between items-center p-4">
-      <div className='self-start'>
-      <img
+      <div className='flex flex-col self-start'>
+      {/* <img
         src={logo}
         className="w-14 h-14 ml-2"
-      />
+      /> */}
+      <div>
+          <iframe src="https://open.spotify.com/embed/playlist/0QbY0ZiC20uY3XhkDGTCun?utm_source=generator&theme=0" width="100%" height="100" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
       </div> 
 
       <div className='flex items-center'>
