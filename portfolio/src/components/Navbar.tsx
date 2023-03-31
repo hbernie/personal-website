@@ -1,21 +1,50 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import logo from '../assets/logo.png';
 import resume from '../assets/Resume.pdf';
 
 export default function NavBar() {
-  return(
-    <nav className="flex justify-between items-center p-4">
-      <div className='flex flex-col self-start'>
-      {/* <img
-        src={logo}
-        className="w-14 h-14 ml-2"
-      /> */}
-      <div>
-          <iframe src="https://open.spotify.com/embed/playlist/0QbY0ZiC20uY3XhkDGTCun?utm_source=generator&theme=0" width="100%" height="100" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
-      </div> 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-      <div className='flex items-center'>
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav className="flex justify-between items-center p-4">
+      <div className='flex self-start mt-3'>
+        <img
+          src={logo}
+          className="w-16 h-16 ml-2 mt-2"
+        />
+        <div>
+          <iframe src="https://open.spotify.com/embed/playlist/0QbY0ZiC20uY3XhkDGTCun?utm_source=generator&theme=0" width="100%" height="100" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      {/* Hamburger menu button */}
+      <button
+        className="lg:hidden flex items-center px-3 py-2 border rounded text-indigo-800 border-indigo-800 hover:text-indigo-900 hover:bg-white mt-4 mr-4"
+        onClick={handleMenuToggle}
+      >
+        <svg
+          className="h-4 w-4 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menu</title>
+          <path
+            fillRule="evenodd"
+            d="M2 4h16a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </button>
+
+      {/* Nav links */}
+      <div
+        className={`${
+          isMenuOpen ? 'block' : 'hidden'
+        } lg:flex lg:items-center lg:w-auto`}
+      >
         <h2 className='mr-9'>About</h2>
         <h2 className='mr-9'>Projects</h2>
         <h2 className='mr-9'>Contact</h2>
@@ -24,5 +53,5 @@ export default function NavBar() {
         </h2>
       </div>
     </nav>
-  )
+  );
 }
