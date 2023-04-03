@@ -11,7 +11,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="flex justify-between items-center p-4">
+    <nav className='flex justify-between items-center p-4 fadein'>
       <div className='flex self-start mt-3'>
         <img
           src={logo}
@@ -68,3 +68,7 @@ export default function NavBar() {
     </nav>
   );
 }
+function useEffect(arg0: () => void, arg1: never[]) {
+  throw new Error('Function not implemented.');
+}
+
