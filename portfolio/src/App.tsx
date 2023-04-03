@@ -22,7 +22,7 @@ export default function App() {
     <div className='h-screen'>
       {showLogo ? 
       <div className='flex h-screen items-center justify-center'>
-        <img className='w-1/6 h-auto animate-pulse' src={logo} />
+        <img className='w-1/6 h-auto fadeinfast' src={logo} />
       </div>
       : <><Navbar /><Home /><Blob /><About /><Projects /><Contact /></>}
     </div>

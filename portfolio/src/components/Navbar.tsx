@@ -1,14 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 import resume from '../assets/Resume.pdf';
 import { Link } from 'react-scroll';
 
 export default function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
 
   return (
     <nav className='flex justify-between items-center p-4 fadein'>
@@ -67,8 +68,5 @@ export default function NavBar() {
       </div>
     </nav>
   );
-}
-function useEffect(arg0: () => void, arg1: never[]) {
-  throw new Error('Function not implemented.');
 }
 
