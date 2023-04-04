@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  h1,h2{
+
+  h1{
     font-family: "Rubik 80s Fade", "cursive"
   }
-}
+
+  h2{
+    font-family: "Roboto Mono"
+  }
 
 body{
   margin: 0;

@@ -43,7 +43,7 @@ export default function NavBar() {
 
       {/* Nav links */}
       <div
-        className={`${
+        className={`mb-9 text-sm ${
           isMenuOpen ? 'block' : 'hidden'
         } lg:flex lg:items-center lg:w-auto`}
       >
