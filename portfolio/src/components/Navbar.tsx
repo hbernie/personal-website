@@ -43,27 +43,27 @@ export default function NavBar() {
 
       {/* Nav links */}
       <div
-        className={`mb-9 text-sm ${
+        className={`mb-11 text-sm ${
           isMenuOpen ? 'block' : 'hidden'
         } lg:flex lg:items-center lg:w-auto`}
       >
-        <h2 className='mr-9 hover-underline-animation cursor-pointer'>
+        <h2 className='mr-9 hover-underline-animation font-bold cursor-pointer'>
           <Link to="about" smooth>
             About
           </Link>
         </h2>
-        <h2 className='mr-9 hover-underline-animation cursor-pointer'>
+        <h2 className='mr-9 hover-underline-animation font-bold cursor-pointer'>
           <Link to="projects" smooth>
             Projects
           </Link>
         </h2>
-        <h2 className='mr-9 hover-underline-animation cursor-pointer'>
+        <h2 className='mr-9 hover-underline-animation font-bold cursor-pointer'>
           <Link to="contact" smooth>
           Contact
           </Link>
         </h2>
         <h2 className='mr-5'>
-          <a href={resume} download="hannahbernstein_resume" className="inline-block px-4 py-2 leading-none border rounded text-indigo-800 border-indigo-800 hover:border-transparent hover:text-indigo-900 hover:bg-white mt-4 lg:mt-0">Download Resume</a>
+          <a href={resume} download="hannahbernstein_resume" className="inline-block font-bold px-4 py-2 leading-none border rounded text-indigo-800 border-indigo-800 hover:border-transparent hover:text-indigo-900 hover:bg-white mt-4 lg:mt-0">Download Resume</a>
         </h2>
       </div>
     </nav>
