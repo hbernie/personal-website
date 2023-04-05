@@ -15,7 +15,7 @@ export default function About(){
     <Element name="about">
       <div ref={ref} className={`flex flex-row justify-center items-center h-screen space-x-12 ${inView ? 'opacity-100 fadeinfast' : 'opacity-0'}`}>
         <div className='flex flex-col w-1/2'>
-          <h2 className='font-bold italic text-5xl'>Get to know me</h2>
+          <h2 className='font-bold italic text-5xl'>Get to Know Me</h2>
           <hr className='border-1 border-black'></hr>
           <br></br>
           <p className='text-lg'>
@@ -34,16 +34,16 @@ export default function About(){
           <br></br>
           <div className='flex flex-row space-x-12'>
             <ul className='text-lg'>
-              <li><span>&#x2665;</span> JavaScript (ES6+)</li>
-              <li><span>&#x2665;</span> TypeScript</li>
-              <li><span>&#x2665;</span> Node.js/Express.js</li>
-              <li><span>&#x2665;</span> TailwindCSS</li>
+              <li><span>&#x2661;</span> JavaScript (ES6+)</li>
+              <li><span>&#x2661;</span> TypeScript</li>
+              <li><span>&#x2661;</span> Node.js/Express.js</li>
+              <li><span>&#x2661;</span> TailwindCSS</li>
             </ul>
             <ul className='text-lg'>
-              <li><span>&#x2665;</span> React</li>
-              <li><span>&#x2665;</span> SQL Databases</li>
-              <li><span>&#x2665;</span> MongoDB</li>
-              <li><span>&#x2665;</span> GraphQL</li>
+              <li><span>&#x263B;</span> React</li>
+              <li><span>&#x263B;</span> SQL Databases</li>
+              <li><span>&#x263B;</span> MongoDB</li>
+              <li><span>&#x263B;</span> GraphQL</li>
             </ul>
           </div>
           

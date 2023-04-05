@@ -10,8 +10,19 @@ export default function Contact(){
 
   return(
     <Element name="contact">
-      <div className="flex justify-center flex-col items-center h-screen">
-        <h1 ref={ref} className={`text-6xl ${inView ? 'opacity-100 fadeinfast' : 'opacity-0'}`}>Contact me</h1>
+      <div ref={ref} className={`flex flex-row justify-center items-center h-screen space-x-12 ${inView ? 'opacity-100 fadeinfast' : 'opacity-0'}`}>
+      <div className='flex flex-col items-center w-1/2'>
+        <h2 className='font-bold italic text-5xl'>Let's Chat!</h2>
+        <br></br>
+        <p className='text-lg text-center'>I am currently
+          <span className='text-indigo-800 font-bold'> seeking new opportunities </span>
+        and would love to hear from you. Please feel free to reach out to me via email or LinkedIn with any questions or to start a conversation. I look forward to connecting with you soon!
+        </p>
+
+        <div>
+          
+        </div>
+      </div>
       </div>
     </Element>
   )
