@@ -1,5 +1,8 @@
 import { Element } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
+import github from '../assets/github_logo.svg';
+import linkedin from '../assets/linkedin_logo.svg';
+import email from '../assets/email_icon.svg';
 
 export default function Contact(){
 
@@ -19,8 +22,11 @@ export default function Contact(){
         and would love to hear from you. Please feel free to reach out to me via email or LinkedIn with any questions or to start a conversation. I look forward to connecting with you soon!
         </p>
 
-        <div>
-          
+        <br></br>
+        <div className='flex flex-row space-x-6'>
+          <a href='https://github.com/hbernie' target="_blank"><img src={github}></img></a>
+          <a href='mailto:hbern00@gmail.com' target="_blank"><img src={email}></img></a>
+          <a href='https://www.linkedin.com/in/bernstein-hannah/' target="_blank"><img src={linkedin}></img></a>
         </div>
       </div>
       </div>
