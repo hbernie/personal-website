@@ -19,7 +19,7 @@ export default function Projects(){
         <br></br>
       </div>
 
-        <h2 className='border-2'>LatchQL</h2>
+        <h2 className='font-bold'>LatchQL</h2>
         <img src={latchql} className='w-1/3 h-auto'></img>
 
         <br></br>
