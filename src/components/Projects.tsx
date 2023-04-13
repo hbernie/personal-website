@@ -2,7 +2,7 @@ import { Element } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
 import latchql from '../assets/latchql.png';
 import trivia from '../assets/trivia.png';
-import github from '../assets/github_logo.svg';
+import spot from '../assets/spot.png';
 
 export default function Projects(){
 
@@ -27,24 +27,30 @@ export default function Projects(){
           <p className='w-5/6'>An open source, npm middleware package that adds additional layers of security with customizable configuration for role-based authorization of GraphQL APIs.</p>
           <h3 className='text-sm mt-3 text-indigo-800'>GraphQL, React, TypeScript, Node, Express, Redis, JWT</h3>
         </div>
-        <img src={latchql} className='w-1/2 h-1/2 hover:scale-125 transition-all duration-500'></img>
+        <img src={latchql} className='w-1/2 h-1/2 hover:scale-125 transition-all duration-500 rounded-md'></img>
       </div>
 
         <br></br>
 
         <div className='flex flex-row mt-3'>
-        <img src={trivia} className='w-1/2 h-1/2 hover:scale-125 transition-all duration-500'></img>
-        <div className='flex flex-col justify-center'>
+        <img src={trivia} className='w-1/2 h-1/2 hover:scale-125 transition-all duration-500 rounded-md'></img>
+        <div className='flex flex-col justify-center ml-12'>
           <p className='text-lg font-bold'>What in the World?</p>
-          <p className='w-5/6'>A geography, trivia, "edutainment" game.</p>
+          <p>A geography, trivia, "edutainment" game.</p>
           <h3 className='text-sm mt-3 text-indigo-800'>React, JavaScript, PostgreSQL, Node, Express</h3>
         </div>
-        
       </div>
 
       <br></br>
 
-      <h2 className='border-2'>Meet Me At the Spot</h2>
+      <div className='flex flex-row mt-3'>
+        <div className='flex flex-col justify-center'>
+          <p className='text-lg font-bold'>The Spot</p>
+          <p className='w-5/6'>A social media app to publicly or privately share and store your favorite locations.</p>
+          <h3 className='text-sm mt-3 text-indigo-800'>React, PostgreSQL, Node, Express, TailwindCSS, Google Maps API</h3>
+        </div>
+        <img src={spot} className='w-1/2 h-1/2 hover:scale-125 transition-all duration-500 rounded-md'></img>
+      </div>
 
       <h2 className='border-2'>Some static websites: LatchQL Landing Page + Portfolio Website</h2>
       </div>
