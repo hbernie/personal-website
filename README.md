@@ -13,3 +13,4 @@ Built with
 - Updated project images and links
 - Better phone and small screen accessibility
 - Add button to return to home component or view navbar
+- Update CNAME
