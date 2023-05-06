@@ -54,7 +54,7 @@ export default function About(){
           </div>
           
         </div>
-          <img src={me2} className='w-24 h-auto cursor-pointer hover:animate-bounce'></img>
+          <img src={me} className='w-24 h-auto cursor-pointer hover:animate-bounce'></img>
       </div>
     </Element>
   )
