@@ -1,19 +1,25 @@
 import { Element } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
 import me from '../assets/me.png';
+import me2 from '../assets/me.jpeg';
 import glitchEffect from '../hooks/glitch';
-import { useEffect } from 'react';
+import { useEffect, useState} from 'react';
 
 export default function About(){
+  const [hasFadedIn, setHasFadedIn] = useState(false);
 
-  const { ref, inView } = useInView({
-    threshold: 0.5, // Trigger the transition when the component is 50% visible
-  });
+    const { ref, inView } = useInView({
+      threshold: 0.5, // Trigger the transition when the component is 50% visible
+    });
+
+  if (inView && !hasFadedIn) {
+    setHasFadedIn(true);
+  }
 
   return(
 
     <Element name="about">
-      <div ref={ref} className={`flex flex-row justify-center items-center h-screen space-x-12 ${inView ? 'opacity-100 fadeinfast' : 'opacity-0'}`}>
+      <div ref={ref} className={`flex flex-row justify-center items-center h-screen space-x-12 ${hasFadedIn ? 'opacity-100 fadeinfast' : 'opacity-0'}`}>
         <div className='flex flex-col w-1/2'>
           <h2 className='font-bold italic text-5xl'>Get to Know Me</h2>
           <hr className='border-1 border-black'></hr>
@@ -48,7 +54,7 @@ export default function About(){
           </div>
           
         </div>
-          <img src={me} className='w-24 h-auto cursor-pointer hover:animate-bounce'></img>
+          <img src={me2} className='w-24 h-auto cursor-pointer hover:animate-bounce'></img>
       </div>
     </Element>
   )
