@@ -11,6 +11,6 @@ Built with
 
 ### Roadmap
 - Updated project images and links
-- Better phone and small screen accessibility
+- Screen size adjustments
 - Add button to return to home component or view navbar
 - Update CNAME
